@@ -1,31 +1,73 @@
-# Simple Cloudflare Nodejs Dynamic Domain Name System
+## Voyager
 
-This is a nodejs script that consume the [http API](https://api.cloudflare.com/) from [cloudflare](https://www.cloudflare.com/) to update the value of  an  "_Existing Resource Record_ " of a cloudflare managed domain (aka zone) with your public ip address, polling it from [ipyfy](https://www.ipify.org) public service. 
+Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
 
-## Requires
+### Feathures:
 
-This script was developed and tested using:
+All HTML files are compressed (see `_layouts/compress.html`).
 
+**Post**
 
-## Install
+All post settings can be changed. Example:
 
-
-Clone the repository .
 ```
-git clone https://github.com/lemyskaman/namesilo_ddns_record_updater.git
-
-cd namesilo_ddns_record_updater
+---
+layout: post
+bg: '2016/background.jpg'
+title: "Post Heading"
+crawlertitle: "page title"
+summary: "post description"
+date: 2016-06-29
+tags : ['front-end']
+slug: post-url
+author: "Author"
+categories: posts
+---
 ```
 
-Install all node modules.
+`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
+
+**Page**
+
+If page contains `active` tag, it will be show on site menu.
+
 ```
-npm install 
+---
+layout: page
+title: "About"
+permalink: /about/
+active: about
+---
 ```
 
+**Archive**
 
-## Usage
+Archive page is sorting posts by tags. No more than one tag in one post.
 
-If everything above is ok then just run the script.
+Good:
+
 ```
-npm start 
+tags : ['front-end']
 ```
+
+Bad:
+
+```
+tags : ['front-end', 'jekyll']
+```
+
+Don't forget to change `_config.yml`.
+
+**Relative paths**
+
+If your blog is not in the root directory, you can include images with a relative path. For example:
+
+```
+![my_image]({{ site.images | relative_url }}/image.jpg)
+```
+
+## Production environment
+
+Build for production:
+
+`JEKYLL_ENV=production jekyll build`
