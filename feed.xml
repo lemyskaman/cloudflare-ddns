@@ -5,8 +5,8 @@
     <description>a site abouth me</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 03:55:28 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 03:55:28 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Apr 2019 03:58:37 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 03:58:37 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -100,25 +100,15 @@ Remember to replace “user” with your github username, then we change to our 
 $ cd user.github.io
 
 It should have a directory tree  like this: 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;$ tree&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;├── 404.html&lt;/p&gt;
-
-&lt;p&gt;├── about.md&lt;/p&gt;
-
-&lt;p&gt;├── _config.yml&lt;/p&gt;
-
-&lt;p&gt;├── Gemfile&lt;/p&gt;
-
-&lt;p&gt;├── index.md&lt;/p&gt;
-
-&lt;p&gt;└── _posts&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;└── 2019-04-29-welcome-to-jekyll.markdown
+$ tree
+├── 404.html
+├── about.md
+├── _config.yml
+├── Gemfile
+├── index.md
+└── _posts
+	└── 2019-04-29-welcome-to-jekyll.markdown
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;### Editing the Gemfile for github, update gems and test&lt;/p&gt;
