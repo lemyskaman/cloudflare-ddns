@@ -5,8 +5,8 @@
     <description>a site abouth me</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 04:00:41 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 04:00:41 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Apr 2019 04:03:31 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 04:03:31 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -50,16 +50,14 @@
 
 &lt;p&gt;### Installing dependencies&lt;/p&gt;
 
-&lt;p&gt;**	**Jekyll was developed with ruby, and therefore it makes planty use of some of it gems, also some development tools libraries and header files are needed, they are shipped to us inside build-essential and zlib1-dev deb packages. You can install them using apt (or your favourite package manager), running a command like this might be enough to get them:&lt;/p&gt;
+&lt;p&gt;Jekyll was developed with ruby, and therefore it makes planty use of some of it gems, also some development tools libraries and header files are needed, they are shipped to us inside build-essential and zlib1-dev deb packages. You can install them using apt (or your favourite package manager), running a command like this might be enough to get them:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby-full build-essential zlib1g-dev git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;### Configuring gems with a user directory&lt;/p&gt;
 
-&lt;p&gt;**	**&lt;/p&gt;
-
-&lt;p&gt;**	**It’s not a good thing to install ruby gems as a root user, thats why to create a gems dir, that holds all of our libs, is a better approach, so thats the first thing to do to create a gems dir:&lt;/p&gt;
+&lt;p&gt;It’s not a good thing to install ruby gems as a root user, thats why to create a gems dir, that holds all of our libs, is a better approach, so thats the first thing to do to create a gems dir:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~ \ 
 $ mkdir gems
@@ -68,16 +66,18 @@ $ mkdir gems
 &lt;p&gt;So we need to edit our  ~/.bashrc file, adding a new environment var (&lt;strong&gt;GEM_HOME&lt;/strong&gt;), and updating the value of another (&lt;strong&gt;PATH&lt;/strong&gt;),  you can edit the file with you fav text editor, i like to use nano:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ nano .bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Then at the very end type something like this:
+&lt;p&gt;Then at the very end type something like this:&lt;/p&gt;
 
-#gem stuf 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#gem stuf 
 export GEM_HOME=&quot;$HOME/gems&quot; 
 export PATH=&quot;$HOME/gems/bin:$PATH&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Finally we load the file and we are ready to install some gems stuff:
+&lt;p&gt;Finally we load the file and we are ready to install some gems stuff:&lt;/p&gt;
 
-$ source ~/.bashrc
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;### Installing Jekyll and github-pages&lt;/p&gt;
