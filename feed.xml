@@ -5,8 +5,8 @@
     <description>a site abouth me</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 03:58:37 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 03:58:37 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Apr 2019 04:00:41 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 04:00:41 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -50,9 +50,9 @@
 
 &lt;p&gt;### Installing dependencies&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Jekyll was developed with ruby, and therefore it makes planty use of some of it gems, also some development tools libraries and header files are needed, they are shipped to us inside build-essential and zlib1-dev deb packages. You can install them using apt (or your favourite package manager), running a command like this might be enough to get them:
+&lt;p&gt;**	**Jekyll was developed with ruby, and therefore it makes planty use of some of it gems, also some development tools libraries and header files are needed, they are shipped to us inside build-essential and zlib1-dev deb packages. You can install them using apt (or your favourite package manager), running a command like this might be enough to get them:&lt;/p&gt;
 
-sudo apt-get install ruby-full build-essential zlib1g-dev git
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby-full build-essential zlib1g-dev git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;### Configuring gems with a user directory&lt;/p&gt;
