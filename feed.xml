@@ -5,8 +5,8 @@
     <description>a site abouth me</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Apr 2019 04:03:31 +0000</pubDate>
-    <lastBuildDate>Tue, 30 Apr 2019 04:03:31 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Apr 2019 04:09:15 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 04:09:15 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -48,14 +48,14 @@
 
 &lt;p&gt;In this guide &lt;strong&gt;I’ll assume you have some basic knowledge about how a website works, some experience using git with a github account,&lt;/strong&gt; and also that you are using a current stable version of Debian or some debian based os like Ubuntu, i will focus only in the process of creating a new site with jekyll locally and then pushing it on github.&lt;/p&gt;
 
-&lt;p&gt;### Installing dependencies&lt;/p&gt;
+&lt;h4 id=&quot;installing-dependencies&quot;&gt;Installing dependencies&lt;/h4&gt;
 
 &lt;p&gt;Jekyll was developed with ruby, and therefore it makes planty use of some of it gems, also some development tools libraries and header files are needed, they are shipped to us inside build-essential and zlib1-dev deb packages. You can install them using apt (or your favourite package manager), running a command like this might be enough to get them:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby-full build-essential zlib1g-dev git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;### Configuring gems with a user directory&lt;/p&gt;
+&lt;h4 id=&quot;configuring-gems-with-a-user-directory&quot;&gt;Configuring gems with a user directory&lt;/h4&gt;
 
 &lt;p&gt;It’s not a good thing to install ruby gems as a root user, thats why to create a gems dir, that holds all of our libs, is a better approach, so thats the first thing to do to create a gems dir:&lt;/p&gt;
 
@@ -80,9 +80,9 @@ export PATH=&quot;$HOME/gems/bin:$PATH&quot;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;### Installing Jekyll and github-pages&lt;/p&gt;
+&lt;h4 id=&quot;installing-jekyll-and-github-pages&quot;&gt;Installing Jekyll and github-pages&lt;/h4&gt;
 
-&lt;p&gt;**	**Now with properly setted ruby environment we can continue installing jekyll and other ruby tools like bundler and github-pages the last one is like a metapackage with all ruby gems for a github based jekyll website:&lt;/p&gt;
+&lt;p&gt;Now with properly setted ruby environment we can continue installing jekyll and other ruby tools like bundler and github-pages the last one is like a metapackage with all ruby gems for a github based jekyll website:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gem install jekyll bundler git  github-pages
 
